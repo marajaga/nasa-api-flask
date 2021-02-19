@@ -7,9 +7,6 @@ from flask import (
 import nasapy
 import os
 from datetime import datetime
-from IPython.display import Image,display,Audio
-from gtts import gTTS
-from datetime import datetime
 import urllib.request
 import pandas as pd
 import requests
