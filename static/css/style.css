@@ -41,7 +41,7 @@ body{
 /* Box NASA */
 
 .box__nasa{
-    margin: 0px 150px;
+    margin: 0px 100px;
     display: flex; 
     flex-direction: column;
     align-items: flex-start;
@@ -53,9 +53,22 @@ body{
   }
 
 .title__imgday{
-    font-size: 3rem;
+    font-size: 1.8rem;
 }
+@media screen and (min-width: 900px) {
+    .title__imgday{
+        font-size: 3rem;
+    }
+  }
 
+.title__img__nasa{
+    font-size: 1rem;
+}
+@media screen and (min-width: 900px) {
+    .title__imgday{
+        font-size: 1.5rem;
+    }
+  }
 
 /* Rocket */
 
@@ -64,28 +77,28 @@ body{
     margin-top: 150px;
     margin-left: 550px;
 }
-/*
+
 .img__rocket{
-   width: 450px; 
-   margin-top: 250px; 
+   width: 500px; 
+   margin-top: 200px; 
    justify-content: flex-start;
 }
 @media screen and (min-width: 900px) {
     .img__rocket{
         width: 800px;
     }
-  }*/
+  }
 
 #trigger {
     position: absolute;
     display: block;
-    top: 500px;
-  
+    top: 500px; 
 }
 
 #rocket{
     position: absolute;
     transform: translateX(0px);
+    left: 12%;
 }
 @media screen and (min-width: 900px) {
     #rocket{
@@ -165,5 +178,6 @@ body{
     justify-content: center;
     height: 200px;
     margin-top: 80px;
+    text-align: center;
 }
 
