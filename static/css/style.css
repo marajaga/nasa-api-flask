@@ -54,6 +54,7 @@ body{
 
 .title__imgday{
     font-size: 1.8rem;
+    text-align: center;
 }
 @media screen and (min-width: 900px) {
     .title__imgday{
@@ -82,6 +83,7 @@ body{
    width: 500px; 
    margin-top: 200px; 
    justify-content: flex-start;
+   margin-left: -100%;
 }
 @media screen and (min-width: 900px) {
     .img__rocket{
@@ -98,7 +100,6 @@ body{
 #rocket{
     position: absolute;
     transform: translateX(0px);
-    left: 12%;
 }
 @media screen and (min-width: 900px) {
     #rocket{
@@ -126,7 +127,7 @@ body{
     border: 3px solid #fff;
     display: flex;
     padding: 20px 20px;
-    width: 450px;
+    width: 80%;
     height: 300px;
     margin: 0 auto;
     margin-bottom: 30px;
@@ -142,11 +143,11 @@ body{
   }
 
 .description__img__nasa{
-    width: 600px;
     margin: 0 auto;
     font-size: 1rem;
     text-align: center;
     margin: 0 auto;
+    padding: 0px 20px;
 }
 @media screen and (min-width: 700px) {
     .description__img__nasa{
