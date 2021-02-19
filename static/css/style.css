@@ -19,6 +19,7 @@ body{
     border-top: 3px solid rgb(235, 8, 8);
     padding: 10px 0px;
     background-color: rgb(0, 54, 130);
+    max-width: 100%;
 }
 
 .img__title{
@@ -63,27 +64,28 @@ body{
     margin-top: 150px;
     margin-left: 550px;
 }
-
+/*
 .img__rocket{
-   width: 600px; 
+   width: 450px; 
    margin-top: 250px; 
+   justify-content: flex-start;
 }
 @media screen and (min-width: 900px) {
     .img__rocket{
         width: 800px;
     }
-  }
+  }*/
 
 #trigger {
     position: absolute;
     display: block;
     top: 500px;
+  
 }
 
 #rocket{
     position: absolute;
     transform: translateX(0px);
-    left: 15%;
 }
 @media screen and (min-width: 900px) {
     #rocket{
@@ -131,6 +133,7 @@ body{
     margin: 0 auto;
     font-size: 1rem;
     text-align: center;
+    margin: 0 auto;
 }
 @media screen and (min-width: 700px) {
     .description__img__nasa{
