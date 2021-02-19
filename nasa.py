@@ -1,8 +1,6 @@
 import nasapy
 import os
 from datetime import datetime
-import urllib.request
-import pandas as pd
 import requests
 
 nasa_api_key = 't6RqfybQcEKgLeB8QjAOGgSnhdT3hbcpTxPdfu5r'

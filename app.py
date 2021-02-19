@@ -7,8 +7,6 @@ from flask import (
 import nasapy
 import os
 from datetime import datetime
-import urllib.request
-import pandas as pd
 import requests
 import nasa
 
