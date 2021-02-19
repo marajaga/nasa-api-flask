@@ -1,0 +1,12 @@
+{% extends 'layouts/default.html' %}
+
+{% block body %}
+{% include 'partials/_heading.html' %}
+
+<div class="error__box">
+    <h1 class="title__error">Tu t'es perdu? L'erreur 404 est humaine</h1>
+    <img class="img__error" src="static/images/error_nasa.jpg" alt="image-error">
+    {% include 'partials/_footer.html' %}
+</div>
+
+{% endblock body %}

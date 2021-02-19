@@ -1,0 +1,42 @@
+{% extends 'layouts/default.html' %}
+
+{% block body %}
+{% include 'partials/_heading.html' %}
+
+<!--  Box Home  -->
+<div class="home__picture">
+
+    <!--  Rocket  -->
+    <div class="img">
+        <img class="img__rocket" src="static/images/fusee.jpg" id="rocket">
+        <span id="trigger"></span>
+    </div>
+
+    <!-- Box Nasa   -->
+    <div class="box__nasa">
+        <span class="title__imgday">Picture of the day :</span>
+        <h2 class="title__img__nasa">{{apod.title}}</h2>
+        {% block content %}
+
+        {% if apod.copyright %}
+        <span class="author__img__nasa">Author: ©{{apod.copyright}}</span>
+        {% endif %}
+
+    </div>
+
+    <!-- Box Nasa 2   -->
+    <div class="box__nasa2">
+        <p class="description__img__nasa">{{apod.explanation}}</p>
+        {% if apod['hdurl'] %}
+        <img class="img__nasa" src={{apod['hdurl']}} alt="picture-nasa">
+        {% else %}
+        <iframe width="448" height="252" src={{apod['url']}} frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+        {% endif %}
+        {% endblock content %}
+
+    </div>
+    {% include 'partials/_footer.html' %}
+</div>
+
+{% endblock %}
