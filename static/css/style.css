@@ -41,7 +41,7 @@ body{
 /* Box NASA */
 
 .box__nasa{
-    margin: 0px 100px;
+    margin: 30px 100px;
     display: flex; 
     flex-direction: column;
     align-items: flex-start;
@@ -73,21 +73,15 @@ body{
   }
 
 /* Rocket */
-/*
-.img{
-    display: flex;
-    margin-top: 150px;
-    margin-left: 550px;
-}
 
-*/
+
 .img__rocket{
-    width: 70%; 
+    width: 600px; 
     margin-top: 200px;
 }
 @media screen and (min-width: 900px) {
     .img__rocket{
-        width: 80%;
+        width: 800px;
     }
   }
 
