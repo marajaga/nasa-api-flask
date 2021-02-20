@@ -9,8 +9,9 @@ nasa = nasapy.Nasa(key = nasa_api_key)
 def picture_of_the_day():
     # Picture of the day
     d = datetime.now()
-    #print(d)
+    print(d)
 
     #Get the image data:
-    apod = nasa.picture_of_the_day(date=d, hd=True) 
+    #apod = nasa.picture_of_the_day(date=d, hd=True) 
+    apod = nasa.picture_of_the_day(date=d, hd=True)     
     return apod

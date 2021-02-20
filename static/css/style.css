@@ -45,6 +45,7 @@ body{
     display: flex; 
     flex-direction: column;
     align-items: flex-start;
+    margin-bottom: 150px;
 }
 @media screen and (min-width: 900px) {
     .box__nasa{
@@ -72,22 +73,21 @@ body{
   }
 
 /* Rocket */
-
+/*
 .img{
     display: flex;
     margin-top: 150px;
     margin-left: 550px;
 }
 
+*/
 .img__rocket{
-   width: 500px; 
-   margin-top: 200px; 
-   justify-content: flex-start;
-   margin-left: -100%;
+    width: 70%; 
+    margin-top: 200px;
 }
 @media screen and (min-width: 900px) {
     .img__rocket{
-        width: 800px;
+        width: 80%;
     }
   }
 
@@ -141,6 +141,20 @@ body{
         margin: none;
     }
   }
+
+iframe{
+    display: flex;
+    padding: 20px 20px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    margin-top: 100px;
+}
+@media screen and (min-width: 900px) {
+    iframe{
+        margin-top: 80px;
+    }
+}
+
 
 .description__img__nasa{
     margin: 0 auto;
