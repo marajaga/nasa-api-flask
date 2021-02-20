@@ -3,7 +3,7 @@ import os
 from datetime import datetime
 import requests
 
-nasa_api_key = 't6RqfybQcEKgLeB8QjAOGgSnhdT3hbcpTxPdfu5r'
+nasa_api_key = os.getenv("NASA_API_KEY")
 nasa = nasapy.Nasa(key = nasa_api_key)
 
 def picture_of_the_day():
